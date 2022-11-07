@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planzer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!--Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_first">
+            <img src="media_icons/logo.png" alt="Planzer logo" />
+            <span>Planzer</span>
+        </div>
+        <div class="nav_second" id="nav_2">
+            <a href="#" data-dropdown-button>Pricing</a>
+            <div class="dropdown" data-dropdown>
+                <a href="#" onclick="toggleMenu()">Features
+            <img
+              onclick="toggleMenu()"
+              class="nav_dropdown"
+              src="media_icons/down_arrow.png"
+              alt="Features"
+          /></a>
+                <div class="dropdown-menu" id="subMenu">
+                    <ul class="dropping">
+                        <li>Integration</li>
+                        <li>Time Tracking</li>
+                        <li>Task management</li>
+                        <li>Goal module</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" onclick="toggleMenu2()">Use Cases
+            <img
+              onclick="toggleMenu2()"
+              class="nav_dropdown"
+              src="media_icons/down_arrow.png"
+              alt="Use Cases"
+          /></a>
+                <div class="dropdown-menu" id="subMenu2">
+                    <ul class="dropping">
+                        <li>FreeLancer</li>
+                        <li>Founder</li>
+                        <li>Developer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav_third" id="nav_3">
+            <a href="signin.html" target="_blank">
+                <p>Sign In</p>
+            </a>
+
+            <a href="signup.html" target="_blank">
+                <button class="signup">Get Started &rarr;</button></a>
+        </div>
+        <div class="mobile_menu_btn">
+            <i class="bx bx-menu-alt-right" id="nav_open"></i>
+            <i class="bx bx-x" id="nav_close"></i>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="fir-div">
+            <h1>
+                Stop losing track of <br /> your tasks
+            </h1>
+            <p>
+                Planzer.io lets you plan your daily tasks from multiple project management <br /> tools in a simple view, to help you be more productive.
+            </p>
+            <button>Start Planning your day &rarr;</button>
+        </div>
+    </section>
+
+    <section class="statistics">
+        <!--Added a class of div here-->
+        <div class="div">
+            <img class="previews" src="media_icons/preview.png" alt="" />
+        </div>
+        <!--Removed p from native-->
+        <p>Here are some of our native integrations</p>
+        <div class="native">
+
+            <img class="integrations" src="media_icons/Notion-logo.png" alt="" />
+            <img class="integrations" src="media_icons/Trello-logo.png" alt="" />
+            <img class="integrations" src="media_icons/Outlook-mail-logo.png" alt="" />
+            <img class="integrations" src="media_icons/Google-calendar-logo.png" alt="" />
+            <img class="integrations" src="media_icons/62d937f6b01acd06f86246d0_Outlook-calendar-logo.png" alt="" />
+        </div>
+    </section>
+    <section class="benefits">
+        <div class="btn-div"><button class="benefits_btn">Benefits</button></div>
+
+        <h1 class="mainh1">You'll never miss a deadline!</h1>
+        <p class="mainp">
+            With planzer.io you will never miss a deadline because you lost track of your tasks, you can <br /> easily organize your day, track your tasks and become more productive.
+        </p>
+        <img class="watermark" src="media_icons/water-mark.png" alt="" />
+        <div class="flex-container">
+            <div class="flex-boxes">
+                <img src="media_icons/chart2.png" alt="" />
+                <h3>Organize Your day</h3>
+                <p>
+                    Organize your day across multiple applications and don't lose track of <br /> your day.
+                </p>
+            </div>
+            <div class="flex-boxes">
+                <img src="media_icons/progress.png" alt="" />
+                <h3>Track progress</h3>
+                <p>
+                    Planzer.io can easily track your goals <br /> by assigning tasks. Of course, you will follow your progress as well.
+                </p>
+            </div>
+            <div class="flex-boxes">
+                <img src="media_icons/goals.png" alt="" />
+                <h3>Set goals</h3>
+                <p>
+                    Once you set specific goals with time frames, you can organize and
+                    <br /> manage your workload.
+                </p>
+            </div>
+            <div class="flex-boxes">
+                <img src="media_icons/filter.png" alt="" />
+                <h3>Limit distractions</h3>
+                <p>
+                    Concentrating on work for extended periods in an organized workspace is much easier.
+                </p>
+            </div>
+            <div class="flex-boxes">
+                <img src="media_icons/calendar.png" alt="" />
+                <h3>Calendar overview</h3>
+                <p>
+                    Planzer.io keeps you aware of meetings and due dates you have coming up on your schedule.
+                </p>
+            </div>
+            <div class="flex-boxes">
+                <img src="media_icons/settings.png" alt="" />
+                <h3>Practice accountability</h3>
+                <p>
+                    Accountability includes keeping your to-do list in mind. You should evaluate your goal list, reflect on your progress and identify the steps you need to take.
+                </p>
+            </div>
+        </div>
+        <div class="btn-div2">
+            <button class="planning-btn">Plan your work &rarr;</button>
+        </div>
+    </section>
+    <section class="fourth">
+        <div class="top-left">
+            <!--Added the div-->
+            <div>
+                <h3>
+                    Track your progress across <br /> multiple applications
+                </h3>
+                <div class="top-left-flex">
+                    <div class="img-div">
+                        <img src="media_icons/fourth-tick.png" alt="" />
+                        <img src="media_icons/fourth-bar.png" alt="" />
+                    </div>
+                    <div class="fourth-flex">
+                        <h4>Plan your day</h4>
+                        <p>
+                            With planzer.io, you can easily plan your day, <br /> and help yourself solve your tasks.
+                        </p>
+
+                        <h4>Set goals</h4>
+                        <p>
+                            Setting up weekly goals help you stay on <br /> track. Add your tasks to your goals to help <br /> planzer.io track the progress for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="top-right">
+                <img class="lower_img" src="media_icons/Frame 2.png" alt="" />
+            </div>
+        </div>
+        <!-- top left div ends above -->
+
+        <div class="bottom-left">
+            <img src="media_icons/fourth-bottom-left.png" alt="" />
+            <div class="bottom-inline">
+                <h3>Convert your emails into tasks</h3>
+                <p>
+                    Planzer.io pulls your emails and tasks from multiple places to allow you plan your day and week using it's excellent features
+                </p>
+                <!--added a div to align the boxes-->
+                <div>
+                    <div class="white-boxes">
+                        <h1 class="blue" id="blue" onclick="animateValue();">
+                            0%
+                            <!--<span class="blue">%</span>-->
+                        </h1>
+                        <p>Increase in productivity</p>
+                    </div>
+                    <div class="white-boxes">
+                        <h1 class="red" id="red">2.5X</h1>
+                        <p>More tasks solved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="card-section">
+        <div class="card_watermark"></div>
+        <div class="top-fifth">
+            <div class="top_f">
+                <button class="int">Integrations</button>
+                <h1>
+                    Planzer.io integrates with all <br /> the tools you're already <br /> using
+                </h1>
+            </div>
+            <button class="int2">Browse integrations</button>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="card_head">
+                    <img src="../planzer/media_icons/Outlook-Calendar.png" alt="Outlook-Calendar">
+                    <h1>Outlook calender <span>
+                        Calender
+                    </span></h1>
+                </div>
+                <p>With the outlook calender then you get an overview of all your events on a given day in the calender</p>
+                <a href="#">View integration <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+
+            <div class="card">
+                <div class="card_head">
+                    <img src="../planzer/media_icons/Google Calendar.png" alt="Outlook-Calendar">
+                    <h1>Google calender <span>
+                        Calender
+                    </span></h1>
+                </div>
+                <p>With google calender then you can have an overview of all your events on a given day in the calender view</p>
+                <a href="#">View integration <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+
+            <div class="card">
+                <div class="card_head">
+                    <img src="../planzer/media_icons/Outlook-Mail.png" alt="Outlook-Calendar">
+                    <h1>Outlook <span>
+                        Email
+                    </span></h1>
+                </div>
+                <p>With the outlook integration we pull in all your emails in a list view so you can easily over your email</p>
+                <a href="#">View integration <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+        </div>
+        <div class="for_individuals">
+            <button class="int2">For individuals</button>
+            <h1>Planzer.io is designed for <br> all individuals</h1>
+        </div>
+    </section>
+    <section class="integrated_task">
+        <div class="div1">
+            <div class="integ_content">
+                <div class="integ_text">
+                    <img src="../planzer/media_icons/icon-1-teams-saas-x-template.png" alt="icon-1-teams-saas-x-template">
+                    <h1>Integration Tasks</h1>
+                    <p>The integration we’ve built with Trello and Notion into planzer.io enables you to work much more efficiently, as you can plan your days and weeks pulling your tasks and dropping them on your weeks.</p>
+                </div>
+                <img class="frame" src="../planzer/media_icons/Frame 79.png" alt="frames">
+            </div>
+        </div>
+        <div class="div2">
+            <div class="hr_list">
+                <div class="int_list" id="list1">
+                    <hr id="hr1">
+                    <div class="int_1">
+                        <img src="../planzer/media_icons/icon-1-teams-saas-x-template.png" alt="icon-1-teams-saas-x-template">
+                        <h2>Integration Tasks</h2>
+                    </div>
+                </div>
+                <div class="int_list" id="list2">
+                    <hr id="hr2">
+                    <div class="int_1">
+                        <img src="../planzer/media_icons/icon-2-teams-saas-x-template.png" alt="icon-1-teams-saas-x-template">
+                        <h2>Backlog module</h2>
+                    </div>
+                </div>
+                <div class="int_list" id="list3">
+                    <hr id="hr3">
+                    <div class="int_1">
+                        <img src="../planzer/media_icons/icon-3-teams-saas-x-template.png" alt="icon-1-teams-saas-x-template">
+                        <h2>Calender events</h2>
+                    </div>
+                </div>
+            </div>
+            <button>Start being more productive  <i class="bx bx-right-arrow-alt"></i></button>
+        </div>
+    </section>
+    <section class="goal_module">
+        <div class="card_watermark2"></div>
+        <div class="goal_head">
+            <div class="goal_text">
+                <button>Goal module</button>
+                <h1>Monitor the progress of your work</h1>
+            </div>
+            <button class="first_btn">Create your first goal <i class="bx bx-right-arrow-alt"></i></button>
+        </div>
+        <div class="goal_content">
+            <div class="content_1">
+                <h3>Stay organized</h3>
+                <p>Organize your schedule at healthy pace,with better result without burning out.</p>
+            </div>
+            <div class="content_1">
+                <h3>Productive in mind</h3>
+                <p>All our features are built with productivity in mind, and you will always be efficient with planzer.io</p>
+            </div>
+        </div>
+    </section>
+    <section class="articles">
+        <div class="arti_head">
+            <div class="arti_text">
+                <button>Articles</button>
+                <h1>Take a look at your latest articles and resources</h1>
+            </div>
+            <button class="first_btn">Browse articles</button>
+        </div>
+
+        <div class="arti_content">
+            <div class="arti_con_item1">
+                <img src="../planzer/media_icons/How do freelancers manage multiple projects.png" alt="how">
+                <div class="item_arti">
+                    <div class="arti_btn_text">
+                        <button>Productivity</button>
+                        <p>2 Aug,2020</p>
+                    </div>
+                    <h1>How do freelancers manage multiple projects?</h1>
+                    <h4>As a freelancer you have multiple projects and clients, but how do you manage it?</h4>
+                </div>
+            </div>
+
+
+            <div class="arti_con_item2">
+                <div class="item2_div">
+                    <img src="../planzer/media_icons/Why-Time-Management-Is-Important-For-Students-p-500.png" alt="Why-Time-Management-Is-Important-For-Students-p-500">
+                    <div class="item2_text">
+                        <h2>21 jun,2022</h2>
+                        <p>WHY TIME MANAGEMENT IS IMPORTANT FOR STUDENTS</p>
+                    </div>
+                </div>
+                <div class="item2_div">
+                    <img src="../planzer/media_icons/how-to-get-started-with-making-a-daily-plan-5-easy-tips-p-500.png" alt="how-to-get-started-with-making-a-daily-plan-5-easy-tips-p-500">
+                    <div class="item2_text">
+                        <h2>21 jun,2022</h2>
+                        <p>HOW TO GET STARTED WITH MAKING A DAILY PLAN. 5 EASY WAYS</p>
+                    </div>
+                </div>
+                <div class="item2_div">
+                    <img src="../planzer/media_icons/Should-I-Plan-My-Day-Or-My-Week-The-Ultimate-Guide-p-500.png" alt="Should-I-Plan-My-Day-Or-My-Week-The-Ultimate-Guide-p-500">
+                    <div class=" item2_text ">
+                        <h2>21 jun,2022</h2>
+                        <p>SHOULD I PLAN MY DAY OR MY WEEK? THE ULTIMATE GUIDE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="frequent">
+        <div class="card_watermark2"></div>
+        <div class="fr_head">
+            <button>FAQS</button>
+            <h1>Frequently Asked Questions</h1>
+        </div>
+        <div class="questions" id="qs">
+            <div class="question" id="question">
+                <button class="button" id="button"><i class="bx bx-plus" id="bt_open" onclick="questionsControl()"></i><i class="bx bx-x" id="bt_close" onclick="questionsControlclose()"></i></button>
+                <p class="quest" id="quest">Can i use planzer.io for free?</p>
+                <p class="answer" id="answer">Sure! But you'll have to be registered</p>
+            </div>
+            <div class="question" id="question2">
+                <button class="button" id="button2"><i class="bx bx-plus" id="bt_open2" onclick="questionsControl2()"></i><i class="bx bx-x" id="bt_close2" onclick="questionsControlclose2()"></i></button>
+                <p class="quest" id="quest2">Can i extend my trial?</p>
+                <p class="answer" id="answer2">Yes, But at a cost</p>
+            </div>
+            <div class="question" id="question3">
+                <button class="button" id="button3"><i class="bx bx-plus" id="bt_open3" onclick="questionsControl3()"></i><i class="bx bx-x" id="bt_close3" onclick="questionsControlclose3()"></i></button>
+                <p class="quest" id="quest3">Does planzer.io have a free trial?</p>
+                <p class="answer" id="answer3">Yes, We Do offer free trails</p>
+            </div>
+            <div class="question" id="question4">
+                <button class="button" id="button4"><i class="bx bx-plus" id="bt_open4" onclick="questionsControl4()"></i><i class="bx bx-x" id="bt_close4" onclick="questionsControlclose4()"></i></button>
+                <p class="quest" id="quest4">What platform does planzer.io integrate with?</p>
+                <p class="answer" id="answer4">Ask Google</p>
+            </div>
+            <div class="question" id="question5">
+                <button class="button" id="button5"><i class="bx bx-plus" id="bt_open5" onclick="questionsControl5()"></i><i class="bx bx-x" id="bt_close5" onclick="questionsControlclose5()"></i></button>
+                <p class="quest" id="quest5">How can i get help?</p>
+                <p class="answer" id="answer5">By asking Google</p>
+            </div>
+            <div class="question" id="question6">
+                <button class="button" id="button6"><i class="bx bx-plus" id="bt_open6" onclick="questionsControl6()"></i><i class="bx bx-x" id="bt_close6" onclick="questionsControlclose6()"></i></button>
+                <p class="quest" id="quest6">Can i sign up with Google or Outlook?</p>
+                <p class="answer" id="answer6">Yes you can</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="free_trail">
+        <button class="free_btn">Start  14-days free trial</button>
+        <div class="free_trail_card">
+            <div class="free_trail_text">
+                <h1>Ready to be more productive? </h1>
+                <h2>Start your 14-days free trial</h2>
+                <button>Start Now <i class="bx bx-right-arrow-alt"></i></button>
+            </div>
+            <div class="free_trail_img">
+                <img class="free_img1" src="../planzer/media_icons/Frame 137.png" alt="frame">
+                <img class="free_img2" src="../planzer/media_icons/Frame 145.png" alt="frame">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="newslatter_links">
+        <div class="newslatter">
+            <div class="news_logo">
+                <img src="media_icons/Planzerio logo dark.png" alt="Planzer logo" />
+            </div>
+            <p>Stay organized with planzer.io</p>
+            <div class="news_form">
+                <label for="news">Subscribe to newsletter</label>
+                <input type="text" name="news" id="news" placeholder="Enter your email address">
+                <button>Submit<i class="bx bx-right-arrow-alt"></i></button>
+            </div>
+        </div>
+        <div class="news_links">
+            <div class="link">
+                <h1>Company</h1>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="link">
+                <h1>Features</h1>
+                <a href="#">Time Tracking</a>
+                <a href="#">Integrations</a>
+                <a href="#">Task Management</a>
+                <a href="#">Goal Module</a>
+            </div>
+            <div class="link">
+                <h1>Product</h1>
+                <a href="#">Help Center</a>
+                <a href="#">Roadmap</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social_links">
+            <i class="bx bxl-facebook" id="fb"></i>
+            <i class="bx bxl-twitter" id="tw"></i>
+            <i class="bx bxl-instagram" id="ins"></i>
+        </div>
+        <h3>Copyright © 2022. Planzer.io All rights reserved.</h3>
+    </footer>
+
+
+    <script src="script.js "></script>
+</body>
+
+</html>
